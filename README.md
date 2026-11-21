@@ -27,7 +27,7 @@ wrangler.jsonc  Cloudflare Workers config
 
 ## Edit content
 
-- The contact email is `hello@poscor.com` in `public/index.html`. Change it to your real address.
+- The contact email is `support@poscor.com` in `public/index.html`. Change it to your real address.
 - Services, process steps and the "Why us" list are plain HTML sections in `public/index.html`.
 - Brand colors are CSS variables at the top of `public/styles.css` (`--primary`, `--primary-2`).
 
