@@ -12,6 +12,7 @@ public/
   favicon.svg   logo / favicon
   _headers      security and cache headers (read by Cloudflare)
   robots.txt
+  sitemap.xml
 wrangler.jsonc  Cloudflare Workers config
 ```
 
@@ -23,11 +24,11 @@ wrangler.jsonc  Cloudflare Workers config
    - **Workers** (default import): leave the build command empty. The deploy command is `npx wrangler deploy`, which reads `wrangler.jsonc`.
    - **Pages**: framework preset **None**, build command *(empty)*, build output directory **`public`**.
 4. Click **Deploy**. Every push to the production branch redeploys the site automatically.
-5. Optional: add your domain under the project's **Custom domains** (or **Domains & Routes**) settings.
+5. Add `poscor.ro` (and `www.poscor.ro` if you want it) under the project's **Custom domains** (or **Domains & Routes**) settings. This is easiest when the domain's DNS is managed by Cloudflare.
 
 ## Edit content
 
-- The contact email (`support@poscor.com`) is in `public/index.html`.
+- The contact email (`support@poscor.ro`) is in `public/index.html`.
 - Services, process steps and the "Why us" list are plain HTML sections in `public/index.html`.
 - Brand colors are CSS variables at the top of `public/styles.css` (`--primary`, `--primary-2`).
 
