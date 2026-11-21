@@ -5,7 +5,8 @@ All site files live in `public/`.
 
 ```
 public/
-  index.html    main page (services, process, why us, contact)
+  index.html    main page in English (default), served at /
+  ro/index.html Romanian version, served at /ro/
   404.html      not-found page
   styles.css    styles (light and dark mode)
   script.js     mobile menu and scroll animations
@@ -28,8 +29,10 @@ wrangler.jsonc  Cloudflare Workers config
 
 ## Edit content
 
-- The contact email (`support@poscor.ro`) is in `public/index.html`.
+- The contact email (`support@poscor.ro`) is in both `public/index.html` and `public/ro/index.html`.
 - Services, process steps and the "Why us" list are plain HTML sections in `public/index.html`.
+- The site is bilingual. English (`public/index.html`) is the default; Romanian is in `public/ro/index.html`.
+  When you change text, update both files. The EN/RO switch in the header links between them.
 - Brand colors are CSS variables at the top of `public/styles.css` (`--primary`, `--primary-2`).
 
 ## Preview locally
